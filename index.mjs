@@ -19,7 +19,7 @@ app.get('/earth', (req, res) => {
 app.get('/mars', (req, res) => {
     let planetMars = planets.getMars();
     console.log(planetMars);
-    res.render('earth', {planetMars});
+    res.render('mars', {planetMars});
 });
 
 
