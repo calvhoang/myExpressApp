@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    background-color: #e6f5ff;
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica;
+}
+
+header, nav {
+    background-color: #fff;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+nav {
+    background-color: #f6f6f6;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: min(100%, 600px)
+}
+
+.card h4, .card img {
+    margin-bottom: 1rem;
+}
+
+.instructions {
+    white-space: pre-line;
+}
+
+#footer-content {
+    width: 100%;
+    font-size: 0.875rem;
+    line-height: 0.5;
+    padding: 1rem;
+    height: 12rem;
+}
+
+#footer-content img {
+    width: auto;
+    height: 4rem;
+    padding: 4px;
+}

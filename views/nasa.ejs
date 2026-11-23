@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <%- include('partials/head.ejs') %>
+</head>
+
+<body>
+    <header>
+        <%- include('partials/header.ejs') %>
+    </header>
+    <nav>
+        <%- include('partials/nav.ejs') %>
+    </nav>
+
+    <main class="container col-12 col-md-6 mx-auto m-4">
+        <h2> NASA Picture of the Day </h2>
+        <h4><%= result.title %> (<%= result.date %>)</h4>
+        <a href="<%= result.permalink %>" target="_blank"><%= result.permalink %></a>
+        <img class="img-fluid d-block mx-auto" src="<%= result.hdurl %>" alt="<%= result.alt %>">
+
+    </main>
+
+    <footer>
+        <%- include('partials/footer.ejs') %>
+    </footer>
+</body>
+
+</html>
