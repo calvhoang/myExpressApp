@@ -16,6 +16,12 @@ app.get('/earth', (req, res) => {
     res.render('earth', {planetEarth});
 });
 
+app.get('/mars', (req, res) => {
+    let planetMars = planets.getMars();
+    console.log(planetMars);
+    res.render('earth', {planetMars});
+});
+
 
 app.listen(3000, () => {
     console.log('server started');
